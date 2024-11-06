@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bondroy Login</title>
+    <link rel="stylesheet" href="dn.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Panel with Striped Background -->
+        <div class="left-panel"></div>
+        
+        <!-- Right Panel with Login Form -->
+        <div class="right-panel">
+            <div class="login-form">
+                <h1 class="brand-logo">Anon</h1>
+                <p class="welcome-text">Welcome back!</p>
+                
+                <!-- Login Form -->
+                <form id="loginForm" onsubmit="return validateForm()">
+                    <input type="email" id="email" placeholder="name@email.com" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    
+                    <div class="options">
+                        <label><input type="checkbox" id="rememberMe"> Remember me</label>
+                        <a href="#">Reset password</a>
+                    </div>
+                    
+                    <a href="index.html" class="signin-button">Sign in</a>
+
+                </form>
+                
+                <!-- Sign Up Link -->
+                <p class="signup-text">Don’t have an account? <a href="d2.html">Login</a></p>
+                
+                <!-- Social Login Options -->
+                <div class="social-login">
+                    <p>or</p>
+                    <button class="google" onclick="continueWithGoogle()">
+                        <img src="th.jpeg" alt="Google Icon"> Continue with Google
+                    </button>
+                    <button class="twitter" onclick="continueWithTwitter()">
+                        <img src="OIP.jpeg" alt="Twitter Icon"> Continue with Twitter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
